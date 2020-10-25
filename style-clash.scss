@@ -29,7 +29,7 @@ fixed;
 
   .ruler-class {
     width: 20%;
-    border: 1px solid rgb(255, 197, 226);
+    border: 2px solid rgb(255, 197, 226);
   }
 
 #ubi-header {
@@ -517,4 +517,8 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
 
       
 
+    }
+
+    .width-fix {
+      width: 100%;
     }
