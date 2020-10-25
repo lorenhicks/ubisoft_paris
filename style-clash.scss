@@ -44,8 +44,9 @@ fixed;
 }
 
 
-#ubi-banner {
+.ubi-banner  {
 }
+
 
 .mobile-hide {
 
@@ -487,7 +488,6 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
         font-family: Roboto Slab, Open Sans;
         color: black;
         line-height: 2rem;
-        width: 100%;
         text-align: left;
       }
 
@@ -521,4 +521,38 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
 
     .width-fix {
       width: 100%;
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    
+    header {  
+      /* This section calls the slideInFromLeft animation we defined above */
+      animation: 2s ease-in 0s 1 slideInFromLeft;
+      
+      background: #333;
+      padding: 30px;
+    }
+    
+    .slide-animate {  
+      /* This section calls the slideInFromLeft animation we defined above */
+      animation: .75s ease-in 0s 1 slideInFromLeft;
+    }
+    
+    .ubi-panel {
+      opacity: .7;
+    }
+
+
+    .ubi-intro {
+      float: left;
+      width: 300px;
+      margin-right: 15px;
+      margin-top: 10px;
     }
