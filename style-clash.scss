@@ -29,7 +29,7 @@ fixed;
 
   .ruler-class {
     width: 20%;
-    border: 2px solid rgb(255, 197, 226);
+    border: 1px solid black;
   }
 
 #ubi-header {
@@ -55,7 +55,7 @@ fixed;
   font-family: 'Fjalla One', sans-serif;  font-weight: 500;
   font-style: normal;
   font-size: x-large;
-  color: black;
+  color:  rgb(255, 0, 128);
   letter-spacing: .1rem;
   overflow-wrap: break-word;
   width: 100%;
@@ -496,7 +496,7 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
         font-size: xx-large;
         font-style: normal;
         font-family: Permanent Marker, Open Sans;
-        color: red;
+        color: rgb(255, 0, 128);
         line-height: 2rem;
         width: 100%;
         text-shadow: .75px .75px black;
