@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+$border-radius-size: 14px;
+$barbarian: #EC9B3B;
+$archer: #EE5487;
+$giant: #F6901A;
+$goblin: #82BB30;
+$wizard: #4FACFF;
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+fixed;
+    background-size: 100%;
+    font-family: Roboto Slab, Open Sans, serif;
+    color: #9E9E9E;
+    margin-top: 30px;
+    width: 100%;
+}
+
+#welcome-ubisoft {
+  background: rgb(255, 255, 255, .95);
+  width: 100%;
+  }
+
+  .ruler-class {
+    width: 20%;
+    border: 1px solid rgb(255, 197, 226);
+  }
+
+#ubi-header {
+  font-weight: 500;
+  font-style: bolder;
+  font-family: Roboto Slab, Open Sans;
+  color: rgb(255, 0, 128);
+  letter-spacing: .5rem;
+  width: 100%;
+  text-shadow: .75px .75px black;
+  margin-right: 5%;
+}
+
+
+#ubi-banner {
+}
+
+.mobile-hide {
+
+}
+
+.ubi-announce {
+  font-family: 'Fjalla One', sans-serif;  font-weight: 500;
+  font-style: normal;
+  font-size: x-large;
+  color: black;
+  letter-spacing: .1rem;
+  overflow-wrap: break-word;
+  width: 100%;
+
+}
+
+
+#opaque-bg {
+  background: rgb(255, 255, 255, .92);
+  width: 100%;
+}
+
+
+#opaque-bg-main {
+  background: rgb(255, 255, 255, .92);
+
+  width: 100%;
+}
+
+#opaque-bg-main2 {
+  width: 100%;
+}
+
+#opaque-bg-main3 {
+  background: rgb(255, 255, 255, .92);
+
+  width: 100%;
+}
+
+
+#opaque-bg-main4 {
+
+  width: 100%;
+}
+
+#opaque-bg-main5 {
+
+  width: 100%;
+}
+
+
+#opaque-bg-main6 {
+  background: rgb(255, 255, 255, .92);
+
+  width: 100%;
+}
+
+#opaque-bg-main7 {
+  width: 100%;
+}
+
+#opaque-bg-main8 {
+  width: 100%;
+}
+
+
+.ubi-lab-photo {
+  float: left;
+  width: 400px;
+  margin-right: 15px;
+  margin-top: 10px;
+  opacity: .7;
+}
+
+
+.ubi-lab-photo-2 {
+  float: right;
+  width: 300px;
+  margin-top: 20px;
+  text-align: right;
+}
+
+
+.ubi-lab-photo- {
+  width: 100%;
+  margin-top: 20px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+#rabbid-and-peach {visibility: hidden; width: 0px;}
+#ubi-banner {visibility: hidden; width: 0px;}
+#ubi-header {font-size: small;}
+#header-body-top-margins {margin-top: 1;}
+}
+
+.slide-container {
+    margin: auto;
+    width: 600px;
+    text-align: center;
+}
+
+.wrapper {
+    padding-top: 140px;
+    padding-bottom: 40px;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.clash-card {
+  background: transparent;
+    width: 300px;
+    display: inline-block;
+    margin: auto;
+    border-radius: $border-radius-size + 5;
+    position: relative;
+    text-align: center;
+    box-shadow: 3px 15px 30px -30px black;
+    z-index: 9999;
+}
+
+#example3 {
+  padding: 10px;
+  background: white;
+  background-clip: border-box;
+}
+
+body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--barbarian.clearfix > div {
+  background: rgb(253, 97, 214);
+  border-right: solid 1px rgb(59, 67, 75);
+}
+
+body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--archer.clearfix > div {
+  background: rgb(52, 255, 86);
+  border-right: solid 1px rgb(59, 67, 75);
+}
+
+.clash-card__image {
+    position: relative;
+    height: 220px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+
+  
+.clash-card__image--barbarian {
+    background: url('/gitimages/ubisoftparis/bg_rabbidpeach.png');
+    img {
+      width: 500px;
+      position: absolute;    
+      top: -65px;
+      left: -70px;
+    }
+  }
+  
+  .clash-card__image--archer {
+    background: url('/gitimages/ubisoftparis/bg_rabbidyoshi.png');
+    img {
+      width: 500px;
+      position: absolute;    
+      top: -65px;
+      left: -70px;
+    }
+  }
+  
+  .clash-card__image--giant {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
+    img {
+      width: 340px;
+      position: absolute;    
+      top: -30px;
+      left: -25px;
+    }
+  }
+  
+  .clash-card__image--goblin {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
+    img {
+      width: 370px;
+      position: absolute;    
+      top: -21px;
+      left: -37px;
+    }
+  }
+  
+  .clash-card__image--wizard {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg');
+    img {
+      width: 345px;
+      position: absolute;    
+      top: -28px;
+      left: -10px;
+    }
+  }
+
+  
+.clash-card__level {
+  font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: Roboto Slab, Open Sans;
+    letter-spacing: .2em;
+    line-height: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+
+
+  .clash-card__level--barbarian {
+    color: rgb(253, 97, 214);
+    font-weight: normal;
+    font-family: Roboto Slab, Open Sans;
+
+  }
+  
+  .clash-card__level--archer {
+    color:  rgb(52, 255, 86);
+    font-family: Roboto Slab, Open Sans;
+    font-weight: normal;
+
+  }
+  
+  .clash-card__level--giant {
+    font-family: Roboto Slab, Open Sans;
+    color:  #F6901A;
+  }
+  
+  .clash-card__level--goblin {
+    font-family: Roboto Slab, Open Sans;
+    color: #82BB30;
+  }
+  
+  .clash-card__level--wizard {
+    font-family: Roboto Slab, Open Sans;
+    color: #4FACFF;
+  }
+
+  
+.clash-card__unit-name {
+  font-family: 'Roboto Slab', serif;
+    font-size: 26px;
+    color: black;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .clash-card__unit-description {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    padding: 20px;
+    margin-bottom: 10px;  
+  }
+
+  
+.clash-card__unit-stats--barbarian {
+  font-family: Roboto Slab, Open Sans;
+    background: rgba(253, 97, 214);
+    
+    
+    .one-third {
+       border-right: 0px solid rgb(59, 67, 75);
+       
+    }
+  }
+  
+  .clash-card__unit-stats--archer {
+    font-family: Roboto Slab, Open Sans;
+    background:  #EE5487;
+    
+    .one-third {
+      font-family: Roboto Slab, Open Sans;
+       border-right: 1px solid #D04976;
+    }
+  }
+  
+  .clash-card__unit-stats--giant {
+    font-family: Roboto Slab, Open Sans;
+    background:  #F6901A;
+    
+    .one-third {
+       border-right: 1px solid darken( #EE5487, 8%);
+    }
+  }
+  
+  .clash-card__unit-stats--goblin {
+    font-family: Roboto Slab, Open Sans;
+    background: #82BB30;
+    
+    .one-third {
+       border-right: 1px solid darken(#82BB30, 6%);
+    }
+  }
+  
+  .clash-card__unit-stats--wizard {
+    font-family: Roboto Slab, Open Sans;
+    background: #4FACFF;
+    
+    .one-third {
+       border-right: 1px solid darken(#4FACFF, 6%);
+    }
+  }
+  
+  
+  .clash-card__unit-stats {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    padding-top: 1.5px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+  }
+    
+    .one-third {
+      width: 33.001%;
+      float: left;
+      padding: 10px 0px;
+      letter-spacing: .1rem;
+    }
+
+    
+
+    body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--barbarian.clearfix > div:nth-child(1) > div.stat > sup {
+      position: absolute;
+      bottom: 6px; 
+      font-size: 70%;
+      margin-left: 2px;
+      
+    }
+
+    body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--archer.clearfix > div:nth-child(1) > div.stat > sup {
+      position: absolute;
+      bottom: 6px; 
+      font-size: 70%; 
+      margin-left: 2px;
+      
+    }
+    
+      .stat {
+        position: relative;
+        font-size: 14px;
+        font-family: Roboto Slab, Open Sans;
+
+        margin-bottom: 10px;
+        font-weight: normal;
+        font-style: oblique;
+      }
+      
+      .stat-value {
+        text-transform: uppercase;
+        font-family: Roboto Slab, Open Sans;
+
+        font-weight: 100;
+        font-size: 14px;
+        font-weight: normal;
+
+      }
+    
+      body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--barbarian.clearfix > div.one-third.no-border {
+        border-right: rgb(253, 97, 214) 1px solid;
+        border-bottom-right-radius: 14px;
+    
+      }
+
+      body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--archer.clearfix > div.one-third.no-border {
+        border-right: rgb(52, 255, 86) 1px solid;
+        border-bottom-right-radius: 14px;
+    
+      }
+
+      body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--barbarian.clearfix > div:nth-child(1) {
+        border-bottom-left-radius: 14px;
+        }
+
+        body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--archer.clearfix > div:nth-child(1) {
+          border-bottom-left-radius: 14px;
+          }
+
+    }
+    
+    .clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+
+    .slick-prev {
+        left: 100px;
+        z-index: 999;
+        background-color: tomato;
+      }
+
+      .slick-next {
+        right: 100px;
+        z-index: 999;
+        color: tomato;
+      }
+
+      body > div > button.slick-next.slick-arrow {
+        margin-right: 400px;
+        padding-top: 3px;
+        background-color: rgba(255, 0, 221, 1);  
+        height: 35px;   
+        width: 35px; 
+        border-radius: 65px;
+      }
+
+      @media only screen and (min-width: 600px) {
+        .mobile-text {visibility: hidden;}
+
+
+      @media only screen and (max-width: 600px) {
+        .slick-next {visibility: hidden;}
+        .slick-prev {visibility: hidden;}
+        .mobile-text {visibility: visible;}
+      }
+
+      body > div > button.slick-prev.slick-arrow {
+        margin-left: 400px;
+        padding-top: 3px;
+        background-color: rgba(255, 0, 221, 1);  
+        height: 35px;   
+        width: 35px; 
+        border-radius: 65px;
+      }
+
+
+
+
+      .ubi-body {
+        font-weight: 300;
+        font-style: bolder;
+        font-family: Roboto Slab, Open Sans;
+        color: black;
+        line-height: 2rem;
+        width: 100%;
+        text-align: left;
+      }
+
+      .ubi-blaze {
+        font-weight: 300;
+        font-size: xx-large;
+        font-style: normal;
+        font-family: Permanent Marker, Open Sans;
+        color: red;
+        line-height: 2rem;
+        width: 100%;
+        text-shadow: .75px .75px black;
+        letter-spacing: .5em;
+        
+      }
+
+      .ubi-forward {
+        font-weight: 900;
+        font-size: xx-large;
+        font-style: normal;
+        font-family: Roboto Slab, Open Sans;
+        color: red;
+        line-height: 2rem;
+        letter-spacing: .25em;
+        text-shadow: .75px .75px black;
+      }
+
+      
+
+    }
