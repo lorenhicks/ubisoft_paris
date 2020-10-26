@@ -21,7 +21,6 @@
 function bigImg(x) {
   x.style.opacity = "1";
   x.style.transition = "ease-in .3s";
-
 }
 
 function normalImg(x) {
