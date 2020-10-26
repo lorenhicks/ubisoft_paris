@@ -487,7 +487,16 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
         border-radius: 65px;
       }
 
+      .ubi-disclaimer {
+        font-weight: 500;
+        font-size: x-small;
+        font-style: normal;
+        font-family: Roboto Slab, Open Sans;
+        color: black;
+        line-height: 2rem;
+        text-align: left;
 
+      }
 
 
       .ubi-body {
@@ -595,14 +604,20 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
     }
 
 
-  #map-icon {
+
+
+  .fa {
     color: rgb(255, 0, 128);
+    text-shadow: .75px .75px black;
+
   }
 
+  .fa:hover {
+    color: yellow;
+    text-shadow: .75px .75px black;
 
-
-
-
+  }
+  
 
 
 
