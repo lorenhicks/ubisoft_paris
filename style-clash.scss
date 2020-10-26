@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 $border-radius-size: 14px;
-$barbarian: #EC9B3B;
-$archer: #EE5487;
-$giant: #F6901A;
-$goblin: #82BB30;
+$r-peach: #EC9B3B;
+$r-yoshi: #EE5487;
+$r-mario: #F6901A;
+$r-luigi: #82BB30;
 $wizard: #4FACFF;
 
 *, *:before, *:after {
@@ -174,7 +174,7 @@ a {
     border-radius: $border-radius-size + 5;
     position: relative;
     text-align: center;
-    box-shadow: 3px 15px 30px -30px black;
+    box-shadow: 33px 15px 30px -30px black;
     z-index: 9999;
 }
 
@@ -184,12 +184,12 @@ a {
   background-clip: border-box;
 }
 
-body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--barbarian.clearfix > div {
+body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--r-peach.clearfix > div {
   background: rgb(253, 97, 214);
   border-right: solid 1px rgb(59, 67, 75);
 }
 
-body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--archer.clearfix > div {
+body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--r-yoshi.clearfix > div {
   background: rgb(52, 255, 86);
   border-right: solid 1px rgb(59, 67, 75);
 }
@@ -197,12 +197,13 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
 .clash-card__image {
     position: relative;
     height: 220px;
+    margin-bottom: 50px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
   }
 
   
-.clash-card__image--barbarian {
+.clash-card__image--r-peach {
     background: url('/gitimages/ubisoftparis/bg_rabbidpeach.png');
     img {
       width: 500px;
@@ -212,18 +213,18 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
     }
   }
   
-  .clash-card__image--archer {
+  .clash-card__image--r-yoshi {
     background: url('/gitimages/ubisoftparis/bg_rabbidyoshi.png');
     img {
-      width: 500px;
+      width: 300px;
       position: absolute;    
       top: -65px;
       left: -70px;
     }
   }
   
-  .clash-card__image--giant {
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
+  .clash-card__image--r-mario {
+    background: url('/img/rabid_mario_bg.png');
     img {
       width: 340px;
       position: absolute;    
@@ -232,8 +233,8 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
     }
   }
   
-  .clash-card__image--goblin {
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
+  .clash-card__image--r-luigi {
+    background: url('/img/rabid_luigi_bg.png');
     img {
       width: 370px;
       position: absolute;    
@@ -266,26 +267,26 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
   }
 
 
-  .clash-card__level--barbarian {
+  .clash-card__level--r-peach {
     color: rgb(253, 97, 214);
     font-weight: normal;
     font-family: Roboto Slab, Open Sans;
 
   }
   
-  .clash-card__level--archer {
+  .clash-card__level--r-yoshi {
     color:  rgb(52, 255, 86);
     font-family: Roboto Slab, Open Sans;
     font-weight: normal;
 
   }
   
-  .clash-card__level--giant {
+  .clash-card__level--r-mario {
     font-family: Roboto Slab, Open Sans;
     color:  #F6901A;
   }
   
-  .clash-card__level--goblin {
+  .clash-card__level--r-luigi {
     font-family: Roboto Slab, Open Sans;
     color: #82BB30;
   }
@@ -313,7 +314,7 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
   }
 
   
-.clash-card__unit-stats--barbarian {
+.clash-card__unit-stats--r-peach {
   font-family: Roboto Slab, Open Sans;
     background: rgba(253, 97, 214);
     
@@ -324,7 +325,7 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
     }
   }
   
-  .clash-card__unit-stats--archer {
+  .clash-card__unit-stats--r-yoshi {
     font-family: Roboto Slab, Open Sans;
     background:  #EE5487;
     
@@ -334,7 +335,7 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
     }
   }
   
-  .clash-card__unit-stats--giant {
+  .clash-card__unit-stats--r-mario {
     font-family: Roboto Slab, Open Sans;
     background:  #F6901A;
     
@@ -343,7 +344,7 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
     }
   }
   
-  .clash-card__unit-stats--goblin {
+  .clash-card__unit-stats--r-luigi {
     font-family: Roboto Slab, Open Sans;
     background: #82BB30;
     
@@ -380,7 +381,7 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
 
     
 
-    body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--barbarian.clearfix > div:nth-child(1) > div.stat > sup {
+    body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--r-peach.clearfix > div:nth-child(1) > div.stat > sup {
       position: absolute;
       bottom: 6px; 
       font-size: 70%;
@@ -388,7 +389,7 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
       
     }
 
-    body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--archer.clearfix > div:nth-child(1) > div.stat > sup {
+    body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--r-yoshi.clearfix > div:nth-child(1) > div.stat > sup {
       position: absolute;
       bottom: 6px; 
       font-size: 70%; 
@@ -416,23 +417,23 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
 
       }
     
-      body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--barbarian.clearfix > div.one-third.no-border {
+      body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--r-peach.clearfix > div.one-third.no-border {
         border-right: rgb(253, 97, 214) 1px solid;
         border-bottom-right-radius: 14px;
     
       }
 
-      body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--archer.clearfix > div.one-third.no-border {
+      body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--r-yoshi.clearfix > div.one-third.no-border {
         border-right: rgb(52, 255, 86) 1px solid;
         border-bottom-right-radius: 14px;
     
       }
 
-      body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--barbarian.clearfix > div:nth-child(1) {
+      body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--r-peach.clearfix > div:nth-child(1) {
         border-bottom-left-radius: 14px;
         }
 
-        body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--archer.clearfix > div:nth-child(1) {
+        body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > div > div.clash-card__unit-stats.clash-card__unit-stats--r-yoshi.clearfix > div:nth-child(1) {
           border-bottom-left-radius: 14px;
           }
 
