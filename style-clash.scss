@@ -20,6 +20,14 @@ fixed;
     color: #9E9E9E;
     margin-top: 30px;
     width: 100%;
+    
+}
+
+a:active {
+  color: #D04976;
+}
+a {
+  color: #D04976;
 }
 
 #welcome-ubisoft {
@@ -491,6 +499,23 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
         text-align: left;
       }
 
+      .ubi-body > a {
+        color: #D04976;
+    }
+
+    .ubi-body > a:active {
+      color: #D04976;
+  }
+
+  .ubi-body > a:hover {
+    color: #D04976;
+}
+
+.ubi-body > a:focus {
+  color: #D04976;
+}
+
+
       .ubi-blaze {
         font-weight: 300;
         font-size: xx-large;
@@ -503,6 +528,19 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
         letter-spacing: .5em;
         
       }
+
+      .ubi-blaze2 {
+        font-weight: 500;
+        font-size: large;
+        font-style: bolder;
+        font-family: Roboto Slab, Open Sans;
+        color: rgb(255, 0, 128);
+        line-height: .8rem;
+        width: 100%;
+        letter-spacing: .1em;
+        
+      }
+
 
       .ubi-forward {
         font-weight: 900;
@@ -556,3 +594,8 @@ body > div > div > div > div.wrapper.slick-slide.slick-current.slick-active > di
       margin-right: 15px;
       margin-top: 10px;
     }
+
+
+  #map-icon {
+    color: rgb(255, 0, 128);
+  }
